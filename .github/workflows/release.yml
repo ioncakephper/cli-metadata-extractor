@@ -48,4 +48,6 @@ jobs:
         # run: npm publish --provenance --access public
         run: npm publish --access public
         # NODE_AUTH_TOKEN is automatically handled by setup-node when Trusted Publishing is configured.
-        # No need for env: NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} anymore.
+        # No need for 
+        env: 
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} anymore.
