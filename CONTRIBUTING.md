@@ -1,6 +1,6 @@
-# Contributing to x-cli
+# Contributing to cli-metadata-extractor
 
-We welcome contributions to `x-cli`! This document outlines the guidelines and processes for contributing to this project. By participating, you agree to abide by our [Code of Conduct](RULES_OF_CONDUCT.md).
+We welcome contributions to `cli-metadata-extractor`! This document outlines the guidelines and processes for contributing to this project. By participating, you agree to abide by our [Code of Conduct](RULES_OF_CONDUCT.md).
 
 ## Table of Contents
 
@@ -62,7 +62,7 @@ Before you begin, ensure you have the following installed:
 
 ### Forking the Repository
 
-Go to the `x-cli` GitHub repository and click the "Fork" button in the top right corner.
+Go to the `cli-metadata-extractor` GitHub repository and click the "Fork" button in the top right corner.
 
 ### Cloning Your Fork
 
@@ -128,12 +128,13 @@ We use ESLint and Prettier for code style and formatting. Please ensure your cod
 
 ```bash
 npm run lint
+# or
 npm run format
 ```
 
 ## Reporting Bugs
 
-If you find a bug, please open an issue on our [GitHub Issues page](https://github.com/ioncakephper/cli-metadata-extractor/issues). When reporting a bug, please include:
+If you find a bug, please open an issue on our [GitHub Issues page](https://metadata-extractor/issues). When reporting a bug, please include:
 
 -   A clear and concise description of the bug.
 -   Steps to reproduce the behavior.
@@ -144,7 +145,7 @@ If you find a bug, please open an issue on our [GitHub Issues page](https://gith
 
 ## Suggesting Enhancements
 
-If you have an idea for a new feature or an enhancement, please open an issue on our [GitHub Issues page](https://github.com/ioncakephper/cli-metadata-extractor/issues). Describe your suggestion clearly and explain why you think it would be beneficial to the project.
+If you have an idea for a new feature or an enhancement, please open an issue on our [GitHub Issues page](https://metadata-extractor/issues). Describe your suggestion clearly and explain why you think it would be beneficial to the project.
 
 ## Code of Conduct
 
