@@ -45,6 +45,7 @@ jobs:
       - name: Publish to npm
         # Only publish if a release was created by release-please
         if: ${{ steps.release.outputs.releases_created }}
-        run: npm publish --provenance --access public
+        # run: npm publish --provenance --access public
+        run: npm publish --access public
         # NODE_AUTH_TOKEN is automatically handled by setup-node when Trusted Publishing is configured.
         # No need for env: NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} anymore.
