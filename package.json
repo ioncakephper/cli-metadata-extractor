@@ -1,11 +1,11 @@
 {
   "name": "cli-metadata-extractor",
   "version": "1.0.3",
-  "main": "index.js",
-  "type": "module",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "main": "index.js",
+  "type": "module",
   "types": "dist/types/cli-metadata.d.ts",
   "files": [
     "index.js",
