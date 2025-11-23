@@ -16,7 +16,7 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: cli-metadata-extractor # Ensure package-name is configured for release-please
+          # package-name: cli-metadata-extractor # Ensure package-name is configured for release-please
 
       - name: Checkout code (for npm publish)
         # Only checkout if a release was created by release-please
