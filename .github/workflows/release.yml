@@ -38,6 +38,7 @@ jobs:
         # Only install dependencies if a release was created by release-please
         if: ${{ steps.release.outputs.releases_created }}
         run: npm install
+        
 
       - name: Publish to npm
         # Only publish if a release was created by release-please
