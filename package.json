@@ -1,0 +1,29 @@
+{
+  "name": "x-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "types": "dist/types/cli-metadata.d.ts",
+  "files": [
+    "index.js",
+    "src",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "@types/node": "^24.10.1",
+    "commander": "^11.1.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [],
+  "author": "ioncakephper",
+  "license": "MIT",
+  "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "mock-sync-cli",
+  "version": "1.0.0",
+  "description": "A mock synchronous CLI for testing purposes.",
+  "main": "index.js",
+  "private": true,
+  "type": "module"
+}

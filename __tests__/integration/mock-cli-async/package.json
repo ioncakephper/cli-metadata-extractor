@@ -1,0 +1,8 @@
+{
+  "name": "mock-async-cli",
+  "version": "1.0.0",
+  "description": "A mock asynchronous CLI for testing purposes.",
+  "main": "index.js",
+  "private": true,
+  "type": "module"
+}
