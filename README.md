@@ -1,16 +1,15 @@
-
 # CLI Metadata Extractor
 
 [![npm version](https://img.shields.io/npm/v/cli-metadata-extractor.svg)](https://www.npmjs.com/package/cli-metadata-extractor)
 [![Build Status](https://img.shields.io/travis/com/your-username/cli-metadata-extractor.svg)](https://travis-ci.com/your-username/cli-metadata-extractor)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://opensource.org/licenses/MIT)
 
 A robust, zero-dependency utility to extract essential metadata (name, version, description) from a `package.json` file, with smart fallbacks for missing or invalid data. Ideal for scaffolding command-line tools that need to display their own package information.
 
 ## Key Features
 
 - **Dual API**: Asynchronously or synchronously extracts metadata to suit your needs.
-- **Smart Name Resolution**: Intelligently finds the CLI name from `bin` fields or the `name` field.
+- **Smart Name Resolution**: Resolves the CLI name from `bin` fields or the `name` field.
 - **Resilient Fallbacks**: Gracefully handles missing or invalid `package.json` files, with support for custom fallback values.
 - **Name Slugification**: Automatically converts package names with spaces or invalid characters into a valid, kebab-case CLI name.
 - **Lightweight & Zero-Dependency**: No external dependencies, keeping your project lean.
@@ -111,15 +110,15 @@ console.log(`The CLI name is: ${metadata.name}`);
 
 ## TypeScript Usage
 
-This library is fully compatible with TypeScript, providing type definitions that enable static type checking, autocompletion, and enhanced developer experience.
+This library is fully compatible with TypeScript, with type definitions for static type checking, autocompletion, and enhanced developer experience.
 
 To leverage TypeScript support, ensure you have `typescript` installed in your project.
 
 ### Understanding `CliMetadata` Type
 
-The library exports a `CliMetadata` type, generated from JSDoc comments, which precisely defines the structure of the metadata object returned by `getCliMetadata` and `getCliMetadataSync`. This type includes the properties `name`, `version`, and `description`, all as strings.
+The library exports a `CliMetadata` type, generated from JSDoc comments, which defines the structure of the `CliMetadata` object returned by `getCliMetadata` and `getCliMetadataSync`. It includes `name`, `version`, and `description` properties (all strings).
 
-Explicitly importing and using this type (e.g., `metadata: CliMetadata`) allows TypeScript to provide strong type checking, catch errors at compile-time, and offer smart autocompletion in your IDE.
+Explicitly importing and using this type (e.g., `metadata: CliMetadata`) enables strong type checking, compile-time error detection, and intelligent autocompletion in your IDE.
 
 ```typescript
 import { CliMetadata } from 'cli-metadata-extractor';
@@ -198,7 +197,7 @@ runTsCliSync();
 
 Asynchronously retrieves CLI metadata from a `package.json` file.
 
-- **`packagePath`** (string, required): The path to the `package.json` file to be imported.
+- **`packagePath`** (string, required): The path to the `package.json` file.
 - **`fallbackValues`** (object, optional): An object containing fallback values for `name`, `version`, and `description`.
 - **Returns**: `Promise<object>` - An object containing the `name`, `version`, and `description`.
 
@@ -214,7 +213,7 @@ Synchronously retrieves CLI metadata from a `package.json` file.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request.
+We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
 
 ## License
 

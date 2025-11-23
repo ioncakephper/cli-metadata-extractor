@@ -1,4 +1,4 @@
-{
+ {
   "name": "x-cli",
   "version": "1.0.0",
   "main": "index.js",
@@ -31,7 +31,15 @@
     "async",
     "sync"
   ],
-  "author": "ioncakephper",
+  "author": "ioncakephper <shytiger@yahoo.com>",
   "license": "MIT",
-  "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs."
+  "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ioncakephper/cli-metadata-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ioncakephper/cli-metadata-extractor/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/cli-metadata-extractor#readme"
 }
