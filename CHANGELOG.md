@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.3...v1.0.4) (2025-11-23)
+
+
+### Bug Fixes
+
+* **package.json:** Reorder main and type fields ([2d52664](https://github.com/ioncakephper/cli-metadata-extractor/commit/2d526646c5c70e1f782b2c74cfd179c31e7c132c))
+
 ## [1.0.3](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.2...v1.0.3) (2025-11-23)
 
 
