@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.6...v1.0.7) (2025-11-23)
+
+
+### Bug Fixes
+
+* **release:** Stop explicitly setting package name in release workflow ([56fb6af](https://github.com/ioncakephper/cli-metadata-extractor/commit/56fb6afe42285d5ff48e680105cac19f9a975e08))
+
 ## [1.0.6](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.5...v1.0.6) (2025-11-23)
 
 
