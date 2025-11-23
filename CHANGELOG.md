@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.5...v1.0.6) (2025-11-23)
+
+
+### Bug Fixes
+
+* **ci:** Correct NODE_AUTH_TOKEN value in release workflow ([0b0490f](https://github.com/ioncakephper/cli-metadata-extractor/commit/0b0490fe714c7a2a9f0c274494f4904786d17628))
+
 ## [1.0.5](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.4...v1.0.5) (2025-11-23)
 
 
