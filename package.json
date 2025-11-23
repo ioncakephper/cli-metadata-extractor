@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "main": "index.js",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "types": "dist/types/cli-metadata.d.ts",
   "files": [
     "index.js",
