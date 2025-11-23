@@ -36,7 +36,7 @@
   "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioncakephper/cli-metadata-extractor.git"
+    "url": "git+https://github.com/ioncakephper/cli-metadata-extractor.git"
   },
   "bugs": {
     "url": "https://github.com/ioncakephper/cli-metadata-extractor/issues"
