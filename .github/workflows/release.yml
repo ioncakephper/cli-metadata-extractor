@@ -13,30 +13,25 @@ jobs:
         id: release
         with:
           release-type: node
-          # package-name: cli-metadata-extractor
-          # Comment out npm publish steps if they were here, as per user request.
-          # release-as: ${{ steps.release.outputs.release_as }}
-          # changelog-path: CHANGELOG.md
+          package-name: cli-metadata-extractor # Ensure package-name is configured for release-please
 
-      # The following steps would typically publish to npm if `release-please` were configured to do so.
-      # They are commented out as per the user's request to disable npm publishing for now.
-      # - name: Checkout code (for npm publish if needed)
-      #   if: ${{ steps.release.outputs.releases_created }}
-      #   uses: actions/checkout@v4
-      #
-      # - name: Setup Node.js (for npm publish if needed)
-      #   if: ${{ steps.release.outputs.releases_created }}
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: '20'
-      #     registry-url: 'https://registry.npmjs.org'
-      #
-      # - name: Install dependencies (for npm publish if needed)
-      #   if: ${{ steps.release.outputs.releases_created }}
-      #   run: npm install
-      #
-      # - name: Publish to npm
-      #   if: ${{ steps.release.outputs.releases_created }}
-      #   run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Checkout code (for npm publish)
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (for npm publish)
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies (for npm publish)
+        if: ${{ steps.release.outputs.releases_created }}
+        run: npm install
+
+      - name: Publish to npm
+        if: ${{ steps.release.outputs.releases_created }}
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
