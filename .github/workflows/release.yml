@@ -1,4 +1,4 @@
-name: Release
+name: Release Please
 
 on:
   push:
@@ -6,42 +6,37 @@ on:
       - main
 
 jobs:
-  release:
-    if: "startsWith(github.event.head_commit.message, 'chore(release):')"
+  release-please:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
-          fetch-depth: 0 # required for standard-version
+          release-type: node
+          # package-name: cli-metadata-extractor
+          # Comment out npm publish steps if they were here, as per user request.
+          # release-as: ${{ steps.release.outputs.release_as }}
+          # changelog-path: CHANGELOG.md
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Configure Git User
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Run standard-version
-        run: npm run release
-
-      - name: Push changes and tags
-        run: |
-          git push --follow-tags origin main
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body_path: CHANGELOG.md
-          prerelease: false
+      # The following steps would typically publish to npm if `release-please` were configured to do so.
+      # They are commented out as per the user's request to disable npm publishing for now.
+      # - name: Checkout code (for npm publish if needed)
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   uses: actions/checkout@v4
+      #
+      # - name: Setup Node.js (for npm publish if needed)
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+      #     registry-url: 'https://registry.npmjs.org'
+      #
+      # - name: Install dependencies (for npm publish if needed)
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   run: npm install
+      #
+      # - name: Publish to npm
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
