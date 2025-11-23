@@ -1,4 +1,4 @@
-with {
+ {
   "name": "x-cli",
   "version": "1.0.0",
   "main": "index.js",
@@ -31,7 +31,7 @@ with {
     "async",
     "sync"
   ],
-  "author": "ioncakephper",
+  "author": "ioncakephper <shytiger@yahoo.com>",
   "license": "MIT",
   "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs.",
   "repository": {
