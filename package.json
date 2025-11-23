@@ -22,7 +22,15 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "metadata",
+    "extractor",
+    "package.json",
+    "utility",
+    "async",
+    "sync"
+  ],
   "author": "ioncakephper",
   "license": "MIT",
   "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs."
