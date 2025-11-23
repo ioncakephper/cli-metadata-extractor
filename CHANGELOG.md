@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.4...v1.0.5) (2025-11-23)
+
+
+### Bug Fixes
+
+* **package:** remove author email ([180b79b](https://github.com/ioncakephper/cli-metadata-extractor/commit/180b79b4f229ee3a8e6274d39fa24e7320a1b4c5))
+* **release:** Remove --provenance flag from npm publish ([5a6b538](https://github.com/ioncakephper/cli-metadata-extractor/commit/5a6b53800199f3a4455e26886f739d5713694396))
+
 ## [1.0.4](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.3...v1.0.4) (2025-11-23)
 
 
