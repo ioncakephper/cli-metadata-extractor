@@ -30,7 +30,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm' # Recommended for faster installs
+          # cache: 'npm' # Recommended for faster installs
           registry-url: 'https://registry.npmjs.org/'
           
           # registry-url is automatically configured for Trusted Publishing by setup-node
@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies (for npm publish)
         # Only install dependencies if a release was created by release-please
         if: ${{ steps.release.outputs.releases_created }}
-        run: npm ci
+        run: npm install
 
 
       - name: Publish to npm
