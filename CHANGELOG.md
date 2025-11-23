@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.2...v1.0.3) (2025-11-23)
+
+
+### Bug Fixes
+
+* **publish:** Add provenance and npm ci to release workflow ([cde38cd](https://github.com/ioncakephper/cli-metadata-extractor/commit/cde38cd581d244c824ddee3833960d438d95b696))
+
 ## [1.0.2](https://github.com/ioncakephper/cli-metadata-extractor/compare/v1.0.1...v1.0.2) (2025-11-23)
 
 
