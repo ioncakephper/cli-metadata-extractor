@@ -34,7 +34,7 @@
     "async",
     "sync"
   ],
-  "author": "ioncakephper <shytiger@yahoo.com>",
+  "author": "ioncakephper",
   "license": "MIT",
   "description": "A robust utility to extract CLI metadata from package.json with async/sync APIs.",
   "repository": {
